@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GameController: UIViewController {
 
     var killCount = 0;
     var bornTotal = 0;
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     var words: [String] = ["Faggot", "Loser", "Asshole", "Douchebag", "Fucker", "Chicken", "Bitch", "Cunt"]
     
     override func viewDidLoad() {
-        // nothing here
+        startButton.hidden = false;
     }
     
     @IBOutlet weak var startButton: UIButton!
