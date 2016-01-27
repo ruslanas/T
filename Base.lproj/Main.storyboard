@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="T" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJA-Xh-d0m">
+                                <rect key="frame" x="12" y="190" width="296" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Start game">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="theButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Nr-Fz-qkc"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3Q-Jb-Nim">
+                                <rect key="frame" x="114" y="107" width="93" height="266"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20011515744919606" green="0.61518324607329844" blue="0.066348015483588443" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="G3Q-Jb-Nim" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LhD-66-1aN"/>
+                            <constraint firstItem="G3Q-Jb-Nim" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kFE-fz-dY3"/>
+                            <constraint firstItem="yJA-Xh-d0m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wOr-9T-TvB"/>
+                            <constraint firstItem="yJA-Xh-d0m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zPw-9R-PNQ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="counter" destination="G3Q-Jb-Nim" id="Pzy-lL-s7a"/>
+                        <outlet property="game" destination="8bC-Xf-vdC" id="IyC-fe-tWq"/>
+                        <outlet property="startButton" destination="yJA-Xh-d0m" id="DHJ-bm-1EF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383" y="-77"/>
+        </scene>
+    </scenes>
+</document>
